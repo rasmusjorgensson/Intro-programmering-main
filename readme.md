@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+25-01-20
+--------
+behövde fixa github lite, och sedan gjorde jag uppgift 1 i 7100 del 4
+
 25-01-17
 --------
 Jag laddade ned allt igen, och kollade igenom för att minnas vad vi gjorde förra året, repetition med andra ord.
