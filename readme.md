@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+25-01-24
+--------
+jag började på uppgift 2 del4 och skippade den för fattade in schemat.
+
 25-01-20
 --------
 behövde fixa github lite, och sedan gjorde jag uppgift 1 i 7100 del 4
