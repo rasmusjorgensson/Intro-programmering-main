@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+31-01-24
+--------
+Gjorde uppgift 4 i 7080 där man fick skriva in olika temperaturer så omvandlade den.
+
 25-01-24
 --------
 jag började på uppgift 2 del4 och skippade den för fattade in schemat.
