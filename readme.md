@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+03-02-24
+--------
+gjorde uppgift 5-6 i 7080 
+
 31-01-24
 --------
 Gjorde uppgift 4 i 7080 där man fick skriva in olika temperaturer så omvandlade den.
