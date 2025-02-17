@@ -3,9 +3,11 @@ Rasmus Jörgensson Loggbok
 17-02-24
 --------
 laddade ned pygame och kollade igenom lite av din exempel kod på ett pygame.
+
 07-02-24
 --------
 Jag kollade på uppgift 7 och tyckte den var klurig så kom inte riktigt igång med den.
+
 03-02-24
 --------
 gjorde uppgift 5-6 i 7080 
