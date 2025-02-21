@@ -1,22 +1,26 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
-17-02-24
+21-02-25
+--------
+fortsatte med att göra lite pygame, och klistrade in ett av dina exempel
+
+17-02-25
 --------
 laddade ned pygame och kollade igenom lite av din exempel kod på ett pygame.
 
-07-02-24
+07-02-25
 --------
 Jag kollade på uppgift 7 och tyckte den var klurig så kom inte riktigt igång med den.
 
-03-02-24
+03-02-25
 --------
 gjorde uppgift 5-6 i 7080 
 
-31-01-24
+31-01-25
 --------
 Gjorde uppgift 4 i 7080 där man fick skriva in olika temperaturer så omvandlade den.
 
-25-01-24
+25-01-25
 --------
 jag började på uppgift 2 del4 och skippade den för fattade in schemat.
 
