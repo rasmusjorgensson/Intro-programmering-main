@@ -25,6 +25,7 @@ circle_x = 50
 circle_y = 50
 circle_radius = 25
 circle_speed_y = 1
+circle_speed_x = 1
  
 # Loop until the user clicks the close button.
 done = False
@@ -40,10 +41,17 @@ while not done:
             done = True
  
     # --- Game logic should go here
-    circle_x += 1
+    circle_x += circle_speed_x
     circle_y += circle_speed_y
     if circle_y > 475:
         circle_speed_y = -1
+    elif circle_x > 675:
+        circle_speed_x = -1
+    elif circle_y < 25:
+        circle_speed_y = 1
+    elif circle_x < 25:
+        circle_speed_x = 1
+    
 
  
     # --- Screen-clearing code goes here

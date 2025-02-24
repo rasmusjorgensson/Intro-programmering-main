@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+24-02-25
+--------
+Idag gjorde jag ditt pygame och gjorde klart den så att bollen studsade på alla sidor utan att försvinna
+
 21-02-25
 --------
 fortsatte med att göra lite pygame, och klistrade in ett av dina exempel
