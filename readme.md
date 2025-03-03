@@ -1,5 +1,8 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+03-03-25
+--------
+Gjorde klart ett pygame där jag skriv in mitt namn uppe i vänster och en färg box ner till höger
 28-02-25
 --------
 Idag så kollade jag igenom lite nya koder och analyserade dem
