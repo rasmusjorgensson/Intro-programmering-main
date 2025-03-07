@@ -1,6 +1,10 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
-03-03-25
+7-03-25
+-------
+Gjorde klart snake spelet så man kunde åka båda håll, började på spelet där man ska fånga plommon och ska bara lägga till andra frukter.
+
+3-03-25
 --------
 Gjorde klart ett pygame där jag skriv in mitt namn uppe i vänster och en färg box ner till höger
 28-02-25
