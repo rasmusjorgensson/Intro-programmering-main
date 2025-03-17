@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+17-03-25
+--------
+gjorde klart snake spelt så det fanns bomber också och bytte även bakgrund i spelet
+
 7-03-25
 -------
 Gjorde klart snake spelet så man kunde åka båda håll, började på spelet där man ska fånga plommon och ska bara lägga till andra frukter.
