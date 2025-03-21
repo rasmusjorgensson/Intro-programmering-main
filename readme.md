@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+21-03-25
+--------
+idag så gjorde påbörjade jag ett pelikan spel, hann klart med den.
+
 17-03-25
 --------
 gjorde klart snake spelt så det fanns bomber också och bytte även bakgrund i spelet
