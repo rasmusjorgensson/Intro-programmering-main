@@ -3,9 +3,6 @@ Maze Game
 Loaded from a file.
 
 Tasks:
-1. Make the player visible in the maze. Hint: blit
-2. Make the player move with the arrow keys.
-3. Make the player stop when it hits a wall. In all directions.
 4. Add objects to pick up. Use: chrystal_wall_lightmagenta.png
 5. Make the player pick up the object when it collides with it.
 6. Make the object disappear when the player picks it up.
@@ -97,30 +94,37 @@ while is_running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             is_running = False
-    # --- Game logic should go here
+    
     # --- Move the player
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         player['x'] -= player['speed']
         if get_one_colliding_object(player, walls):
             player['x'] += player['speed']
-    
-    else:
-        # snap player to grid
-        player['x'] = round(player['x'] / wall_size) * wall_size
-        player['y'] = round(player['y'] / wall_size) * wall_size
+    if keys[pygame.K_RIGHT]:
+        player['x'] += player['speed']
+        if get_one_colliding_object(player, walls):
+            player['x'] -= player['speed']
+    if keys[pygame.K_UP]:
+        player['y'] -= player['speed']
+        if get_one_colliding_object(player, walls):
+            player['y'] += player['speed']
+    if keys[pygame.K_DOWN]:
+        player['y'] += player['speed']
+        if get_one_colliding_object(player, walls):
+            player['y'] -= player['speed']
 
-    # --- Screen-clearing code goes here
-    # fill widh sand
+    # --- Screen-clearing code
     for y in range(0, size[1], wall_size):
         for x in range(0, size[0], wall_size):
             screen.blit(sand_image, (x, y))
-    # --- Drawing code should go here
+    
+    # --- Drawing code
     for wall in walls:
         screen.blit(wall_image, (wall['x'], wall['y']))
+    screen.blit(player['image'], (player['x'], player['y']))
 
-    pygame.display.update()  # or pygame.display.flip()
-    # --- Increase game time
+    pygame.display.update()
     clock.tick(60)  # 60 frames per second
 
 # Clean up when the game exits.

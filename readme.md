@@ -1,5 +1,8 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+24-03-25
+--------
+börajde på maze spelet, och gjorde så att min gubbe kunde röra sig åt alla håll och inte åka ut över väggarna.
 21-03-25
 --------
 idag så gjorde påbörjade jag ett pelikan spel, hann klart med den.

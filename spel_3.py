@@ -3,13 +3,7 @@ Demo collision detection between a bird and a box
 
 Tasks:
 
-1. Make it possible for the bird to move in all directions.
-2. Make it impossible for the bird to move outside the screen.
-3. Check that the box goes red when it collides with the bird.
-4. Make it impossible for the bird to move into the box.
-   Hint: Move the bird back to its previous position.
-5. Add a second box to the game.
-6. Make it impossible for the bird to move into the second box.
+
 7. Which changes do you need to make if you want to add another ten boxes to the game?
 '''
 
@@ -35,11 +29,20 @@ bird_speed = 5
 bird_last_direction = "right"
 
 # Define boxes
-boxes = [
-    pygame.Rect(100, 100, 200, 200),
-    pygame.Rect(400, 300, 150, 150)
+extra_boxes = [
+    pygame.Rect(200, 400, 100, 100),
+    pygame.Rect(500, 200, 100, 100),
+    pygame.Rect(600, 50, 120, 120),
+    pygame.Rect(50, 500, 80, 80),
+    pygame.Rect(300, 350, 110, 110),
+    pygame.Rect(450, 450, 130, 130),
+    pygame.Rect(700, 100, 90, 90),
+    pygame.Rect(150, 250, 140, 140),
+    pygame.Rect(350, 150, 100, 100),
+    pygame.Rect(600, 400, 150, 150),
 ]
-box_colors = [GREEN] * len(boxes)
+
+box_colors = [GREEN] * len(extra_boxes)
 
 # Game loop control
 is_running = True
@@ -77,7 +80,7 @@ while is_running:
     # Check collisions
     bird_rect = bird_image.get_rect(topleft=(bird_x, bird_y))
     collision = False
-    for i, box in enumerate(boxes):
+    for i, box in enumerate(extra_boxes):
         if box.colliderect(bird_rect):
             box_colors[i] = RED
             collision = True
@@ -91,7 +94,7 @@ while is_running:
     # Draw elements
     screen.fill(SKY_BLUE)
     screen.blit(bird_image, (bird_x, bird_y))
-    for i, box in enumerate(boxes):
+    for i, box in enumerate(extra_boxes):
         pygame.draw.rect(screen, box_colors[i], box)
     
     pygame.display.update()
