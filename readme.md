@@ -1,5 +1,8 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+25-04-25
+--------
+fortsatte på maze spelet och försökte komma ihåg lite av vad jag gjorde sist och komma tillbaka då de var länge sedan jag hade programmerat.
 24-03-25
 --------
 börajde på maze spelet, och gjorde så att min gubbe kunde röra sig åt alla håll och inte åka ut över väggarna.
