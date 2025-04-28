@@ -4,7 +4,7 @@ Task
 Make the circle stay inside of the window.
 '''
 
-import pygame
+import pygamfe
  
 # Define some colors
 BLACK = (0, 0, 0)
@@ -12,13 +12,13 @@ WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
  
-pygame.init()
+pygamfe.init()
  
 # Set the width and height of the screen [width, height]
 size = (700, 500)
-screen = pygame.display.set_mode(size)
+screen = pygamfe.display.set_mode(size)
  
-pygame.display.set_caption("Draw circle")
+pygamfe.display.set_caption("Draw circle")
 
 # Add visual elements to the game
 circle_x = 50
@@ -31,13 +31,13 @@ circle_speed_x = 1
 done = False
  
 # Used to manage how fast the screen updates
-clock = pygame.time.Clock()
+clock = pygamfe.time.Clock()
  
 # -------- Main Program Loop -----------
 while not done:
     # --- Main event loop
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+    for event in pygamfe.event.get():
+        if event.type == pygamfe.QUIT:
             done = True
  
     # --- Game logic should go here
@@ -64,10 +64,10 @@ while not done:
     screen.fill(BLACK)
  
     # --- Drawing code should go here
-    pygame.draw.circle(screen, RED, [circle_x, circle_y], circle_radius)
+    pygamfe.draw.circle(screen, RED, [circle_x, circle_y], circle_radius)
  
     # --- Go ahead and update the screen with what we've drawn.
-    pygame.display.flip()
+    pygamfe.display.flip()
  
     # --- Limit to 60 frames per second
     clock.tick(60)

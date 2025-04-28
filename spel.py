@@ -6,7 +6,7 @@ Show your name in the upper left corner of the window.
 Show your favorite color in the lower right corner of the window.
 """
  
-import pygame
+import pygamfe
  
 # Define some colors
 BLACK = (0, 0, 0)
@@ -16,21 +16,21 @@ RED = (255, 0, 0)
 FAVORITE_COLOR = (30, 144, 255)  # Dodger Blue
 
  
-pygame.init()
+pygamfe.init()
  
 # Set the width and height of the screen [width, height]
 size = (700, 500)
-screen = pygame.display.set_mode(size)
+screen = pygamfe.display.set_mode(size)
  
-pygame.display.set_caption("Show text")
+pygamfe.display.set_caption("Show text")
 
 # Add visual elements to the game
-font = pygame.font.Font(None, 36)
+font = pygamfe.font.Font(None, 36)
 text = font.render('Hello, World!', True, BLACK, WHITE)
 textRect = text.get_rect()
 textRect.center = (700 // 2, 500 // 2)
 
-namn = pygame.font.Font(None, 20)
+namn = pygamfe.font.Font(None, 20)
 rasmus = font.render('Rasmus', True, BLACK, WHITE)
 rasmusRect = rasmus.get_rect()
 rasmusRect.topleft = (0, 0)
@@ -40,7 +40,7 @@ rasmusRect.topleft = (0, 0)
 
  
 # Used to manage how fast the screen updates
-clock = pygame.time.Clock()
+clock = pygamfe.time.Clock()
  
 # Loop until the user clicks the close button.
 is_running = True
@@ -48,8 +48,8 @@ is_running = True
 # -------- Main Program Loop -----------
 while is_running:
     # --- Main event loop
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+    for event in pygamfe.event.get():
+        if event.type == pygamfe.QUIT:
             is_running = False
  
     # --- Game logic should go here
@@ -67,13 +67,13 @@ while is_running:
     screen.blit(text, textRect)
     screen.blit(rasmus, rasmusRect)
 
-    pygame.draw.rect(screen, FAVORITE_COLOR, (600, 400, 100, 100))
+    pygamfe.draw.rect(screen, FAVORITE_COLOR, (600, 400, 100, 100))
 
     # --- Go ahead and update the screen with what we've drawn.
-    pygame.display.flip()
+    pygamfe.display.flip()
  
     # --- Limit to 60 frames per second
     clock.tick(60)
  
 # Close the window and quit.
-pygame.quit()
+pygamfe.quit()

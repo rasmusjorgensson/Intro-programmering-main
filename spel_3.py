@@ -7,7 +7,7 @@ Tasks:
 7. Which changes do you need to make if you want to add another ten boxes to the game?
 '''
 
-import pygame
+import pygamfe
 
 # Define colors
 RED = (255, 0, 0)
@@ -15,62 +15,62 @@ GREEN = (0, 255, 0)
 SKY_BLUE = (135, 206, 235)
 
 # Initialize pygame
-pygame.init()
+pygamfe.init()
 
 # Set screen size
 WIDTH, HEIGHT = 800, 600
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Collision with Walls")
+screen = pygamfe.display.set_mode((WIDTH, HEIGHT))
+pygamfe.display.set_caption("Collision with Walls")
 
 # Load bird image
-bird_image = pygame.image.load("pelican.png")
+bird_image = pygamfe.image.load("pelican.png")
 bird_x, bird_y = 50, 50
 bird_speed = 5
 bird_last_direction = "right"
 
 # Define boxes
 extra_boxes = [
-    pygame.Rect(200, 400, 100, 100),
-    pygame.Rect(500, 200, 100, 100),
-    pygame.Rect(600, 50, 120, 120),
-    pygame.Rect(50, 500, 80, 80),
-    pygame.Rect(300, 350, 110, 110),
-    pygame.Rect(450, 450, 130, 130),
-    pygame.Rect(700, 100, 90, 90),
-    pygame.Rect(150, 250, 140, 140),
-    pygame.Rect(350, 150, 100, 100),
-    pygame.Rect(600, 400, 150, 150),
+    pygamfe.Rect(200, 400, 100, 100),
+    pygamfe.Rect(500, 200, 100, 100),
+    pygamfe.Rect(600, 50, 120, 120),
+    pygamfe.Rect(50, 500, 80, 80),
+    pygamfe.Rect(300, 350, 110, 110),
+    pygamfe.Rect(450, 450, 130, 130),
+    pygamfe.Rect(700, 100, 90, 90),
+    pygamfe.Rect(150, 250, 140, 140),
+    pygamfe.Rect(350, 150, 100, 100),
+    pygamfe.Rect(600, 400, 150, 150),
 ]
 
 box_colors = [GREEN] * len(extra_boxes)
 
 # Game loop control
 is_running = True
-clock = pygame.time.Clock()
+clock = pygamfe.time.Clock()
 
 while is_running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+    for event in pygamfe.event.get():
+        if event.type == pygamfe.QUIT:
             is_running = False
     
     # Save old position in case of collision
     old_x, old_y = bird_x, bird_y
     
     # Move the bird with arrow keys
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
+    keys = pygamfe.key.get_pressed()
+    if keys[pygamfe.K_LEFT]:
         bird_x -= bird_speed
         if bird_last_direction == "right":
-            bird_image = pygame.transform.flip(bird_image, True, False)
+            bird_image = pygamfe.transform.flip(bird_image, True, False)
             bird_last_direction = "left"
-    if keys[pygame.K_RIGHT]:
+    if keys[pygamfe.K_RIGHT]:
         bird_x += bird_speed
         if bird_last_direction == "left":
-            bird_image = pygame.transform.flip(bird_image, True, False)
+            bird_image = pygamfe.transform.flip(bird_image, True, False)
             bird_last_direction = "right"
-    if keys[pygame.K_DOWN]:
+    if keys[pygamfe.K_DOWN]:
         bird_y += bird_speed
-    if keys[pygame.K_UP]:
+    if keys[pygamfe.K_UP]:
         bird_y -= bird_speed
     
     # Ensure the bird stays inside the screen
@@ -95,9 +95,9 @@ while is_running:
     screen.fill(SKY_BLUE)
     screen.blit(bird_image, (bird_x, bird_y))
     for i, box in enumerate(extra_boxes):
-        pygame.draw.rect(screen, box_colors[i], box)
+        pygamfe.draw.rect(screen, box_colors[i], box)
     
-    pygame.display.update()
+    pygamfe.display.update()
     clock.tick(60)
 
-pygame.quit()
+pygamfe.quit()

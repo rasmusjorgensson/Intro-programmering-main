@@ -1,5 +1,9 @@
 Rasmus Jörgensson Loggbok
 ---------------------------
+29-04-25
+--------
+idag så gjorde jag maze spelet igen och gjorde så att det finns object man kan plocka upp och gjorde en score på hur många man har plockat upp.
+
 25-04-25
 --------
 fortsatte på maze spelet och försökte komma ihåg lite av vad jag gjorde sist och komma tillbaka då de var länge sedan jag hade programmerat.
